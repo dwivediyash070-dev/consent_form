@@ -1,10 +1,6 @@
 
 
-// Create a cookie when the page loads
-Cookies.set('site_cookie', 'active', {
-    expires: 365,
-    sameSite: 'Lax'
-});
+
 
 document.getElementById("consentForm").addEventListener("submit", function(e) {
     e.preventDefault();
