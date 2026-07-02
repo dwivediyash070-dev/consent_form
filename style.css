@@ -1,0 +1,9 @@
+body{font-family:Arial,sans-serif;background:#f4f4f4;padding:40px;}
+.container{max-width:700px;margin:auto;background:#fff;padding:30px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.15);}
+label{display:block;margin-top:15px;font-weight:bold;}
+input,textarea{width:100%;padding:10px;margin-top:5px;box-sizing:border-box;}
+.checkbox{font-weight:normal;margin:10px 0;}
+.checkbox input{width:auto;margin-right:10px;}
+button{margin-top:20px;background:#007bff;color:#fff;border:none;padding:12px 25px;border-radius:5px;cursor:pointer;}
+button:hover{background:#0056b3;}
+#message{margin-top:20px;color:green;font-weight:bold;}

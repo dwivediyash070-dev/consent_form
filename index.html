@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Consent Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h2>Customer Information & Consent Form</h2>
+<form id="consentForm">
+<label>Name</label><input type="text" name="name" required>
+<label>Age</label><input type="number" name="age" required>
+<label>Email</label><input type="email" name="email" required>
+<label>Phone Number</label><input type="tel" name="phone" required>
+<label>Address</label><textarea name="address" rows="3" required></textarea>
+
+<h3>Where can we contact you?</h3>
+<label class="checkbox"><input type="checkbox" name="contact_sms">SMS</label>
+<label class="checkbox"><input type="checkbox" name="contact_email">Email</label>
+<label class="checkbox"><input type="checkbox" name="contact_post">Post</label>
+
+<h3>Consent for Data Usage</h3>
+<label class="checkbox"><input type="checkbox" name="share_third_party">Share my data with third parties</label>
+<label class="checkbox"><input type="checkbox" name="sell_data">Sell my data to data brokers</label>
+<label class="checkbox"><input type="checkbox" name="ai_training">Use my data for AI model training</label>
+
+<button type="submit">Submit</button>
+</form>
+<div id="message"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
