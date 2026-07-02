@@ -1,7 +1,4 @@
 
-
-
-
 document.getElementById("consentForm").addEventListener("submit", function(e) {
     e.preventDefault();
 
