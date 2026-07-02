@@ -31,5 +31,17 @@
 <div id="message"></div>
 </div>
 <script src="script.js"></script>
+  
+                                <script src='https://cdn-app6.securiti.ai/consent/form-consent-sdk.js'></script>
+                                <script>window.addEventListener('load', function() {
+    FormConsentSDK.initialize({
+        codeGenMetadata:{"formPropertyId":"5","formSelector":"[id*=\"consentForm\"]","subjectIdentifiers":[{"name":"name","selector":"[name = \"name\"]","isPrimary":false},{"name":"age","selector":"[name = \"age\"]","isPrimary":false},{"name":"email","selector":"[name = \"email\"]","isPrimary":true},{"name":"phone","selector":"[name = \"phone\"]","isPrimary":false}],"consentIdentifiers":[{"type":"checkbox","name":"contact_sms","selector":"[name = \"contact_sms\"]","propertyId":2612,"consentValue":"unchecked"},{"type":"checkbox","name":"contact_email","selector":"[name = \"contact_email\"]","propertyId":2613,"consentValue":"unchecked"},{"type":"checkbox","name":"contact_post","selector":"[name = \"contact_post\"]","propertyId":2614,"consentValue":"unchecked"},{"type":"checkbox","name":"share_third_party","selector":"[name = \"share_third_party\"]","propertyId":2615,"consentValue":"unchecked"},{"type":"checkbox","name":"sell_data","selector":"[name = \"sell_data\"]","propertyId":2616,"consentValue":"unchecked"},{"type":"checkbox","name":"ai_training","selector":"[name = \"ai_training\"]","propertyId":2617,"consentValue":"unchecked"}],"consentTrigger":{"action":"submit","selector":""}},
+        url: 'https://app6.securiti.ai/privaci/v1/',
+        authToken:'71b199ea-f818-406d-b189-8bda99f214c9',
+        orgId:'4',
+        onConsentSuccess: null,
+        onConsentFailure: null
+    })
+})</script>
 </body>
 </html>
